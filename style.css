@@ -20,7 +20,7 @@ body {
 .banner img {
     width: 100%;
     height: 10%;
-    object-fit: cover;
+    /*object-fit: cover;*/
 }
 /* The sidebar menu */
 .sidebar {
