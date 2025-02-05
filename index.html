@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Collapsible Sidebar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
       .center-text {
             text-align: center;
@@ -16,5 +18,20 @@
   <body>
     <h2 class="center-text">Hello & Welcome to</h2>
     <h1 class="center-text">Nicketa.tech</h1>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+        <h2>Collapsible Sidebar</h2>
+        <p>Content goes here...</p>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
