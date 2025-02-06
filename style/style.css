@@ -1,0 +1,191 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.site-header {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/ /* Adjust to space-between */
+	justify-content: center; /* Center the content horizontally */
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    position: relative; /* Ensure it moves with content */
+    z-index: 2; /* Ensure header stays on top */
+    background-color: #fff; /* Add background color to header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+/* Profile Picture Styles */
+.profile-picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    /* position: absolute; */
+    /* top: 20px; */
+    /* left: 20px; */
+    width: 150px; /* Adjust size as needed */
+    height: 160px; /* Adjust size as needed */
+    border-radius: 20%; /* Make it circular */
+    overflow: hidden; /* Hide overflow */
+    border: 3px solid saddlebrown; /* Optional: Add border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+	margin: -75px auto 20px; /* Center and position between header and main */
+    position: relative;
+	left: -35%; /* Move it a bit to the left */
+    z-index: 3; /* Ensure it stays on top */
+	transition: margin-left 0.5s; /* Smooth transition */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.banner {
+	width: 100%;
+    /*width: calc(100% - 5px); *//* Adjust width to account for logo */
+    height: 100%; /* Ensure the banner covers the entire header height */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%; /* Ensure the image covers the entire banner area */
+    object-fit: cover; /* Scale the image to cover the banner area */
+}
+
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%;
+    width: 0; /* Sidebar hidden initially */
+    position: fixed; /* Stays in place */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/* Sidebar Links */
+.sidebar a {
+    padding: 8px 8px 8px 22px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Close Button */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 40px;
+}
+
+/* Open Button */
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    position: fixed; /* Change to fixed */
+    top: 20px;
+    left: 20px;
+    z-index: 3; /* Ensure button stays on top */
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Main Content */
+#main {
+    transition: margin-left .5s;
+    padding-left: 50px;
+	padding-right: 50px;
+    margin-left: 0;
+    overflow: hidden; /* Hide any overflow */
+}
+
+/* Paragraph styling for padding and justification */
+p {
+    padding: 15px;
+    line-height: 1.5;
+    text-align: justify; /* Justify the text */
+	color: #2e4053
+}
+}
+.logo img {
+    height: 100px; /* Adjust height as needed */
+    margin-left: 20px; /* Add some margin */
+}
+/* Footer Styles */
+.site-footer {
+    background-color: ghostwhite; /* Background color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center the text */
+    /*position: fixed; *//* Fix the footer at the bottom */
+	position: relative; /* Ensure it moves with the content */
+    width: 100%; /* Full width */
+    bottom: 0; /* Align at the bottom */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+	display: flex; /* Use flexbox for centering */
+	justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.site-footer p {
+    margin: 0; /* Remove default margin */
+    color: darkblue; /* Text color */
+    font-size: 14px; /* Font size */
+}
+/*****Side Nav media link******/
+.socialMedia a {
+  width: 150px; /* Set a specific width */
+  position: fixed; /* Position them relative to the browser window */
+  #left: -155px; /* Position them outside of the screen */
+  right: -135px;
+  transition: 0.1s; /* Add transition on hover */
+  padding: 10px;
+  text-decoration: none; /* Remove underline */
+  font-size: 17px;
+  color: white;
+  border-radius: 10px 0px 0px 10px; /* Rounded corners on the top right and bottom right side */
+  text-align: left;
+  margin-left: 0px;
+}
+
+.socialMedia a:hover {
+  right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#linkedin {
+    top: 310px;
+    background-color: #0e76a8;
+}
+#youtube {
+    top: 370px;
+    background-color: #bb0000;
+}
+#github {
+    top: 430px;
+    background-color: #555;
+}
+/*****Side Nav media link******/
