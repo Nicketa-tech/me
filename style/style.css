@@ -28,8 +28,8 @@ body {
     /* top: 20px; */
     /* left: 20px; */
     width: 150px; /* Adjust size as needed */
-    height: 150px; /* Adjust size as needed */
-    border-radius: 30%; /* Make it circular */
+    height: 160px; /* Adjust size as needed */
+    border-radius: 20%; /* Make it circular */
     overflow: hidden; /* Hide overflow */
     border: 3px solid saddlebrown; /* Optional: Add border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
